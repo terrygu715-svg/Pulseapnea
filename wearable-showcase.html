@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smart wearable project showcase</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F6F7F9}
+a{color:#111820}a:hover{color:#000000}
+</style>
+<style>html{scroll-behavior:smooth}</style>
+</head>
+<body>
+<div style="background: #F6F7F9; color: #111820; font-family: 'Sora', system-ui, sans-serif; min-height: 100vh">
+
+<!-- NAV -->
+<header style="border-bottom: 1px solid #E1E5EA">
+<nav style="max-width: 1200px; margin: 0 auto; padding: 20px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<div style="display: flex; align-items: center; gap: 12px">
+<div style="width: 28px; height: 28px; border-radius: 9px; border: 2px solid #0F766E; box-sizing: border-box"></div>
+<span style="font-weight: 600; font-size: 18px; letter-spacing: -0.01em">WristFlex<br></span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px; font-variant-numeric: tabular-nums; font-size: 14px">
+<a href="#timeline" style="text-decoration: none; padding: 12px 14px; border-radius: 8px">01 Timeline</a>
+<a href="#functions" style="text-decoration: none; padding: 12px 14px; border-radius: 8px">02 Functions &amp; data</a>
+</div>
+</nav>
+</header>
+
+<!-- HERO -->
+<section style="max-width: 1200px; margin: 0 auto; padding: 88px 24px 72px; display: flex; flex-wrap: wrap; align-items: center; gap: 56px">
+<div style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+
+<h1 style="margin: 0; font-size: clamp(40px, 6vw, 72px); line-height: 1.02; font-weight: 600; letter-spacing: -0.03em">It started as a sleep-aware remote. Now it's an AI health tracker.</h1>
+<p style="margin: 0; max-width: 620px; font-size: 19px; line-height: 1.6; color: #4E5B68">This started as a smart-sleep aware smart wristband that could turn your devices off after you've fallen asleep, with many hours of research and development it's now an AI powered sleep apnea wristband.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; padding-top: 8px">
+<a href="#timeline" style="text-decoration: none; display: inline-flex; align-items: center; min-height: 48px; padding: 0 22px; border-radius: 999px; background: #0F766E; color: #FFFFFF; font-weight: 600">See how it evolved</a>
+<a href="#functions" style="text-decoration: none; display: inline-flex; align-items: center; min-height: 48px; padding: 0 22px; border-radius: 999px; border: 1px solid #C9D0D8; font-weight: 500">View the data</a>
+</div>
+</div>
+<div style="flex: 1 1 280px; display: flex; justify-content: center">
+<svg width="280" height="380" viewBox="0 0 280 380" aria-hidden="true">
+<rect x="88" y="0" width="104" height="110" rx="20" fill="#D5DBE2"></rect>
+<rect x="88" y="270" width="104" height="110" rx="20" fill="#D5DBE2"></rect>
+<rect x="46" y="76" width="188" height="228" rx="52" fill="#FFFFFF" stroke="#C9D0D8" stroke-width="2"></rect>
+<rect x="64" y="94" width="152" height="192" rx="38" fill="#070A0E"></rect>
+<path d="M126 128 a18 18 0 1 0 22 22 a14 14 0 0 1 -22 -22 z" fill="none" stroke="#0F766E" stroke-width="2.5"></path>
+<polyline points="78,196 104,196 114,176 126,218 138,186 146,196 202,196" fill="none" stroke="#0F766E" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"></polyline>
+<text x="140" y="246" text-anchor="middle" fill="#A9B4BF" font-family="Sora, sans-serif" font-size="11" letter-spacing="1.5">SLEEP DETECTED</text>
+<text x="140" y="264" text-anchor="middle" fill="#F3F5F7" font-family="Sora, sans-serif" font-size="11" letter-spacing="1.5">IR → DEVICES OFF</text>
+<rect x="236" y="160" width="8" height="40" rx="4" fill="#C9D0D8"></rect>
+</svg>
+</div>
+</section>
+
+<!-- THEN / NOW -->
+<section style="max-width: 1200px; margin: 0 auto; padding: 0 24px 96px">
+<div style="background: #FFFFFF; border: 1px solid #E1E5EA; border-radius: 24px; overflow: hidden">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 24px 28px; border-bottom: 1px solid #E1E5EA">
+<div style="flex: 1 1 160px; font-variant-numeric: tabular-nums; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #5D6A77">What changed</div>
+<div style="flex: 2 1 220px; display: flex; flex-direction: column; gap: 2px"><span style="font-variant-numeric: tabular-nums; font-size: 12px; color: #5D6A77">V1 · [YEAR]</span><span style="font-size: 20px; font-weight: 600">Sleep-aware remote</span></div>
+<div style="flex: 2 1 220px; display: flex; flex-direction: column; gap: 2px"><span style="font-variant-numeric: tabular-nums; font-size: 12px; color: #0F766E">NOW · [YEAR]</span><span style="font-size: 20px; font-weight: 600">AI health tracker</span></div>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 8px 24px; padding: 20px 28px; border-bottom: 1px solid #E1E5EA; font-size: 16px; line-height: 1.5">
+<div style="flex: 1 1 160px; font-variant-numeric: tabular-nums; font-size: 13px; color: #5D6A77; padding-top: 2px">Job</div>
+<div style="flex: 2 1 220px; color: #4E5B68">Turn the room off when you fall asleep</div>
+<div style="flex: 2 1 220px">Track fitness and screen for sleep apnea</div>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 8px 24px; padding: 20px 28px; border-bottom: 1px solid #E1E5EA; font-size: 16px; line-height: 1.5">
+<div style="flex: 1 1 160px; font-variant-numeric: tabular-nums; font-size: 13px; color: #5D6A77; padding-top: 2px">Sensors</div>
+<div style="flex: 2 1 220px; color: #4E5B68">Motion, heart rate</div>
+<div style="flex: 2 1 220px">Motion, heart rate, SpO₂ [CONFIRM]</div>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 8px 24px; padding: 20px 28px; border-bottom: 1px solid #E1E5EA; font-size: 16px; line-height: 1.5">
+<div style="flex: 1 1 160px; font-variant-numeric: tabular-nums; font-size: 13px; color: #5D6A77; padding-top: 2px">Intelligence</div>
+<div style="flex: 2 1 220px; color: #4E5B68">Rule-based thresholds</div>
+<div style="flex: 2 1 220px">AI model trained on sleep apnea patient data</div>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 8px 24px; padding: 20px 28px; border-bottom: 1px solid #E1E5EA; font-size: 16px; line-height: 1.5">
+<div style="flex: 1 1 160px; font-variant-numeric: tabular-nums; font-size: 13px; color: #5D6A77; padding-top: 2px">At night</div>
+<div style="flex: 2 1 220px; color: #4E5B68">Sends IR off commands</div>
+<div style="flex: 2 1 220px">Sends IR off commands and flags disrupted breathing</div>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 8px 24px; padding: 20px 28px; font-size: 16px; line-height: 1.5">
+<div style="flex: 1 1 160px; font-variant-numeric: tabular-nums; font-size: 13px; color: #5D6A77; padding-top: 2px">During the day</div>
+<div style="flex: 2 1 220px; color: #4E5B68">Idle</div>
+<div style="flex: 2 1 220px">Steps, activity and heart rate</div>
+</div>
+</div>
+</section>
+
+<!-- TIMELINE -->
+<section id="timeline" style="border-top: 1px solid #E1E5EA">
+<div style="max-width: 1200px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 56px">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 720px">
+<div style="font-variant-numeric: tabular-nums; font-size: 20px; letter-spacing: 0.12em; text-transform: uppercase; color: #0F766E">01 · Development timeline</div>
+<h2 style="margin: 0; font-size: clamp(32px, 4.5vw, 52px); line-height: 1.08; font-weight: 600; letter-spacing: -0.02em">From first idea to where it stands today</h2>
+</div>
+
+<ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column">
+
+<li style="display: flex; flex-wrap: wrap; gap: 0 24px">
+<div style="flex: 1 1 160px; max-width: 200px; padding-top: 4px; font-variant-numeric: tabular-nums; font-size: 14px; color: #5D6A77; display: flex; flex-direction: column; gap: 4px">
+<span style="color: #111820">Phase 01</span><span>[MONTH YEAR]</span>
+</div>
+<div style="width: 16px; display: flex; flex-direction: column; align-items: center" aria-hidden="true">
+<div style="width: 12px; height: 12px; border-radius: 999px; border: 2px solid #9AA5B1; margin-top: 6px; flex-shrink: 0"></div>
+<div style="width: 2px; flex-grow: 1; background: #E1E5EA"></div>
+</div>
+<div style="flex: 999 1 420px; min-width: 0; padding-bottom: 48px; display: flex; flex-direction: column; gap: 10px">
+<div style="font-variant-numeric: tabular-nums; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #4E5B68">Concept</div>
+<h3 style="margin: 0; font-size: 24px; font-weight: 600">The sleep-aware remote</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4E5B68; max-width: 640px">Problem identified: falling asleep with the TV, lights or AC still running. The idea: a wrist device that knows when you've dozed off and turns things off for you over infrared.</p>
+</div>
+</li>
+
+<li style="display: flex; flex-wrap: wrap; gap: 0 24px">
+<div style="flex: 1 1 160px; max-width: 200px; padding-top: 4px; font-variant-numeric: tabular-nums; font-size: 14px; color: #5D6A77; display: flex; flex-direction: column; gap: 4px">
+<span style="color: #111820">Phase 02</span><span>[MONTH YEAR]</span>
+</div>
+<div style="width: 16px; display: flex; flex-direction: column; align-items: center" aria-hidden="true">
+<div style="width: 12px; height: 12px; border-radius: 999px; border: 2px solid #9AA5B1; margin-top: 6px; flex-shrink: 0"></div>
+<div style="width: 2px; flex-grow: 1; background: #E1E5EA"></div>
+</div>
+<div style="flex: 999 1 420px; min-width: 0; padding-bottom: 48px; display: flex; flex-direction: column; gap: 10px">
+<div style="font-variant-numeric: tabular-nums; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #4E5B68">Hardware prototype</div>
+<h3 style="margin: 0; font-size: 24px; font-weight: 600">First working prototype</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4E5B68; max-width: 640px">Motion and heart-rate sensing on a [MICROCONTROLLER] board, with rule-based sleep-onset detection driving an IR LED transmitter. [ADD PROTOTYPE DETAILS]</p>
+</div>
+</li>
+
+<li style="display: flex; flex-wrap: wrap; gap: 0 24px">
+<div style="flex: 1 1 160px; max-width: 200px; padding-top: 4px; font-variant-numeric: tabular-nums; font-size: 14px; color: #5D6A77; display: flex; flex-direction: column; gap: 4px">
+<span style="color: #111820">Phase 03</span><span>[MONTH YEAR]</span>
+</div>
+<div style="width: 16px; display: flex; flex-direction: column; align-items: center" aria-hidden="true">
+<div style="width: 12px; height: 12px; border-radius: 999px; border: 2px solid #9AA5B1; margin-top: 6px; flex-shrink: 0"></div>
+<div style="width: 2px; flex-grow: 1; background: #E1E5EA"></div>
+</div>
+<div style="flex: 999 1 420px; min-width: 0; padding-bottom: 48px; display: flex; flex-direction: column; gap: 10px">
+<div style="font-variant-numeric: tabular-nums; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #4E5B68">IR integration</div>
+<h3 style="margin: 0; font-size: 24px; font-weight: 600">Talking to the room</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4E5B68; max-width: 640px">Storing IR codes for surrounding devices and testing range and reliability in a real bedroom. [ADD TEST RESULTS]</p>
+</div>
+</li>
+
+<li style="display: flex; flex-wrap: wrap; gap: 0 24px">
+<div style="flex: 1 1 160px; max-width: 200px; padding-top: 4px; font-variant-numeric: tabular-nums; font-size: 14px; color: #5D6A77; display: flex; flex-direction: column; gap: 4px">
+<span style="color: #111820">Phase 04</span><span>[MONTH YEAR]</span>
+</div>
+<div style="width: 16px; display: flex; flex-direction: column; align-items: center" aria-hidden="true">
+<div style="width: 12px; height: 12px; border-radius: 999px; border: 2px solid #9AA5B1; margin-top: 6px; flex-shrink: 0"></div>
+<div style="width: 2px; flex-grow: 1; background: #E1E5EA"></div>
+</div>
+<div style="flex: 999 1 420px; min-width: 0; padding-bottom: 48px; display: flex; flex-direction: column; gap: 10px">
+<div style="font-variant-numeric: tabular-nums; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #4E5B68">Pivot</div>
+<h3 style="margin: 0; font-size: 24px; font-weight: 600">Becoming a fitness tracker</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4E5B68; max-width: 640px">The sensors needed for sleep detection could do far more. Scope widened to activity, steps and continuous heart-rate tracking. [WHY THE PIVOT HAPPENED]</p>
+</div>
+</li>
+
+<li style="display: flex; flex-wrap: wrap; gap: 0 24px">
+<div style="flex: 1 1 160px; max-width: 200px; padding-top: 4px; font-variant-numeric: tabular-nums; font-size: 14px; color: #5D6A77; display: flex; flex-direction: column; gap: 4px">
+<span style="color: #111820">Phase 05</span><span>[MONTH YEAR]</span>
+</div>
+<div style="width: 16px; display: flex; flex-direction: column; align-items: center" aria-hidden="true">
+<div style="width: 12px; height: 12px; border-radius: 999px; border: 2px solid #9AA5B1; margin-top: 6px; flex-shrink: 0"></div>
+<div style="width: 2px; flex-grow: 1; background: #E1E5EA"></div>
+</div>
+<div style="flex: 999 1 420px; min-width: 0; padding-bottom: 48px; display: flex; flex-direction: column; gap: 10px">
+<div style="font-variant-numeric: tabular-nums; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #4E5B68">AI model</div>
+<h3 style="margin: 0; font-size: 24px; font-weight: 600">Training on sleep apnea data</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4E5B68; max-width: 640px">A model trained on [DATASET NAME] recordings from sleep apnea patients learns to recognise disrupted breathing patterns from wrist-level signals.</p>
+</div>
+</li>
+
+<li style="display: flex; flex-wrap: wrap; gap: 0 24px">
+<div style="flex: 1 1 160px; max-width: 200px; padding-top: 4px; font-variant-numeric: tabular-nums; font-size: 14px; color: #5D6A77; display: flex; flex-direction: column; gap: 4px">
+<span style="color: #0F766E">Phase 06 · Now</span><span>[MONTH YEAR]</span>
+</div>
+<div style="width: 16px; display: flex; flex-direction: column; align-items: center" aria-hidden="true">
+<div style="width: 14px; height: 14px; border-radius: 999px; background: #0F766E; margin-top: 5px; flex-shrink: 0"></div>
+<div style="width: 2px; flex-grow: 1; background: #E1E5EA"></div>
+</div>
+<div style="flex: 999 1 420px; min-width: 0; padding-bottom: 48px">
+<div style="background: #FFFFFF; border: 1px solid #E1E5EA; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+<div style="font-variant-numeric: tabular-nums; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #0F766E">Current build</div>
+<h3 style="margin: 0; font-size: 24px; font-weight: 600">AI health tracker</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4E5B68; max-width: 640px">Fitness tracking, sleep monitoring and AI-based apnea screening in one device, with sleep-triggered IR control kept as a core feature.</p>
+</div>
+</div>
+</li>
+
+<li style="display: flex; flex-wrap: wrap; gap: 0 24px">
+<div style="flex: 1 1 160px; max-width: 200px; padding-top: 4px; font-variant-numeric: tabular-nums; font-size: 14px; color: #5D6A77; display: flex; flex-direction: column; gap: 4px">
+<span style="color: #111820">Next</span><span>[TARGET DATE]</span>
+</div>
+<div style="width: 16px; display: flex; flex-direction: column; align-items: center" aria-hidden="true">
+<div style="width: 12px; height: 12px; border-radius: 999px; border: 2px dashed #9AA5B1; margin-top: 6px; flex-shrink: 0"></div>
+</div>
+<div style="flex: 999 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
+<div style="font-variant-numeric: tabular-nums; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #4E5B68">Roadmap</div>
+<h3 style="margin: 0; font-size: 24px; font-weight: 600">[NEXT MILESTONE]</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4E5B68; max-width: 640px">[e.g. clinical validation, companion app, smaller enclosure]</p>
+</div>
+</li>
+
+</ol>
+</div>
+</section>
+
+<!-- FUNCTIONS & DATA -->
+<section id="functions" style="border-top: 1px solid #E1E5EA; background: #EDF0F3">
+<div style="max-width: 1200px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 64px">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 720px">
+<div style="font-variant-numeric: tabular-nums; font-size: 20px; letter-spacing: 0.12em; text-transform: uppercase; color: #0F766E">02 · Functions &amp; data</div>
+<h2 style="margin: 0; font-size: clamp(32px, 4.5vw, 52px); line-height: 1.08; font-weight: 600; letter-spacing: -0.02em">What the device measures, and what it does with it</h2>
+</div>
+
+<!-- Pipeline -->
+<div style="display: flex; flex-direction: column; gap: 20px">
+<h3 style="margin: 0; font-size: 20px; font-weight: 600">Data flow</h3>
+<div style="display: flex; flex-wrap: wrap; align-items: stretch; gap: 12px">
+<div style="flex: 1 1 200px; background: #FFFFFF; border: 1px solid #E1E5EA; border-radius: 16px; padding: 20px; display: flex; flex-direction: column; gap: 8px">
+<div style="font-variant-numeric: tabular-nums; font-size: 12px; color: #5D6A77">01 SENSE</div>
+<div style="font-size: 18px; font-weight: 600">Sensors</div>
+<div style="font-size: 15px; line-height: 1.5; color: #4E5B68">Accelerometer, optical heart rate (PPG), SpO₂ [CONFIRM SENSOR LIST]</div>
+</div>
+<div style="display: flex; align-items: center; justify-content: center; width: 24px; color: #9AA5B1" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 10h12M11 5l5 5-5 5"></path></svg></div>
+<div style="flex: 1 1 200px; background: #FFFFFF; border: 1px solid #E1E5EA; border-radius: 16px; padding: 20px; display: flex; flex-direction: column; gap: 8px">
+<div style="font-variant-numeric: tabular-nums; font-size: 12px; color: #5D6A77">02 PROCESS</div>
+<div style="font-size: 18px; font-weight: 600">On-device processing</div>
+<div style="font-size: 15px; line-height: 1.5; color: #4E5B68">Filtering, feature extraction, sleep-stage estimation</div>
+</div>
+<div style="display: flex; align-items: center; justify-content: center; width: 24px; color: #9AA5B1" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 10h12M11 5l5 5-5 5"></path></svg></div>
+<div style="flex: 1 1 200px; background: #FFFFFF; border: 1px solid #0F766E; border-radius: 16px; padding: 20px; display: flex; flex-direction: column; gap: 8px">
+<div style="font-variant-numeric: tabular-nums; font-size: 12px; color: #0F766E">03 INFER</div>
+<div style="font-size: 18px; font-weight: 600">AI model</div>
+<div style="font-size: 15px; line-height: 1.5; color: #4E5B68">Trained on sleep apnea patient data; flags breathing disruption</div>
+</div>
+<div style="display: flex; align-items: center; justify-content: center; width: 24px; color: #9AA5B1" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 10h12M11 5l5 5-5 5"></path></svg></div>
+<div style="flex: 1 1 200px; background: #FFFFFF; border: 1px solid #E1E5EA; border-radius: 16px; padding: 20px; display: flex; flex-direction: column; gap: 8px">
+<div style="font-variant-numeric: tabular-nums; font-size: 12px; color: #5D6A77">04 ACT</div>
+<div style="font-size: 18px; font-weight: 600">Outputs</div>
+<div style="font-size: 15px; line-height: 1.5; color: #4E5B68">IR off commands, health insights, alerts in [APP NAME]</div>
+</div>
+</div>
+</div>
+
+<!-- Function cards -->
+<div style="display: flex; flex-direction: column; gap: 20px">
+<h3 style="margin: 0; font-size: 20px; font-weight: 600">Core functions</h3>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px">
+
+<div style="background: #FFFFFF; border: 1px solid #E1E5EA; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px"><div style="font-size: 20px; font-weight: 600">Sleep-onset detection</div><div style="font-variant-numeric: tabular-nums; font-size: 12px; color: #5D6A77">ORIGINAL</div></div>
+<div style="font-size: 44px; font-weight: 600; letter-spacing: -0.02em; color: #0F766E">[XX%]</div>
+<div style="font-size: 14px; color: #4E5B68; margin-top: -12px">detection accuracy</div>
+<dl style="margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 8px 16px; font-size: 14px; border-top: 1px solid #E1E5EA; padding-top: 16px">
+<dt style="font-variant-numeric: tabular-nums; color: #5D6A77">Inputs</dt><dd style="margin: 0">Motion, heart rate</dd>
+<dt style="font-variant-numeric: tabular-nums; color: #5D6A77">Latency</dt><dd style="margin: 0">[X min] after onset</dd>
+</dl>
+</div>
+
+<div style="background: #FFFFFF; border: 1px solid #E1E5EA; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px"><div style="font-size: 20px; font-weight: 600">IR device control</div><div style="font-variant-numeric: tabular-nums; font-size: 12px; color: #5D6A77">ORIGINAL</div></div>
+<div style="font-size: 44px; font-weight: 600; letter-spacing: -0.02em; color: #0F766E">[X m]</div>
+<div style="font-size: 14px; color: #4E5B68; margin-top: -12px">effective IR range</div>
+<dl style="margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 8px 16px; font-size: 14px; border-top: 1px solid #E1E5EA; padding-top: 16px">
+<dt style="font-variant-numeric: tabular-nums; color: #5D6A77">Devices</dt><dd style="margin: 0">TV, lights, fan, AC [CONFIRM]</dd>
+<dt style="font-variant-numeric: tabular-nums; color: #5D6A77">Codes stored</dt><dd style="margin: 0">[N]</dd>
+</dl>
+</div>
+
+<div style="background: #FFFFFF; border: 1px solid #0F766E; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px"><div style="font-size: 20px; font-weight: 600">Apnea screening</div><div style="font-variant-numeric: tabular-nums; font-size: 12px; color: #0F766E">AI</div></div>
+<div style="font-size: 44px; font-weight: 600; letter-spacing: -0.02em; color: #0F766E">[XX%]</div>
+<div style="font-size: 14px; color: #4E5B68; margin-top: -12px">sensitivity on held-out patients</div>
+<dl style="margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 8px 16px; font-size: 14px; border-top: 1px solid #E1E5EA; padding-top: 16px">
+<dt style="font-variant-numeric: tabular-nums; color: #5D6A77">Inputs</dt><dd style="margin: 0">SpO₂, heart rate, motion</dd>
+<dt style="font-variant-numeric: tabular-nums; color: #5D6A77">Output</dt><dd style="margin: 0">Flagged events per night</dd>
+</dl>
+</div>
+
+<div style="background: #FFFFFF; border: 1px solid #E1E5EA; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px"><div style="font-size: 20px; font-weight: 600">Heart rate &amp; SpO₂</div><div style="font-variant-numeric: tabular-nums; font-size: 12px; color: #5D6A77">HEALTH</div></div>
+<div style="font-size: 44px; font-weight: 600; letter-spacing: -0.02em; color: #0F766E">[X Hz]</div>
+<div style="font-size: 14px; color: #4E5B68; margin-top: -12px">sampling rate</div>
+<dl style="margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 8px 16px; font-size: 14px; border-top: 1px solid #E1E5EA; padding-top: 16px">
+<dt style="font-variant-numeric: tabular-nums; color: #5D6A77">Sensor</dt><dd style="margin: 0">[SENSOR MODEL]</dd>
+<dt style="font-variant-numeric: tabular-nums; color: #5D6A77">Error vs ref.</dt><dd style="margin: 0">[± X bpm]</dd>
+</dl>
+</div>
+
+<div style="background: #FFFFFF; border: 1px solid #E1E5EA; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px"><div style="font-size: 20px; font-weight: 600">Activity tracking</div><div style="font-variant-numeric: tabular-nums; font-size: 12px; color: #5D6A77">FITNESS</div></div>
+<div style="font-size: 44px; font-weight: 600; letter-spacing: -0.02em; color: #0F766E">[XX%]</div>
+<div style="font-size: 14px; color: #4E5B68; margin-top: -12px">step-count accuracy</div>
+<dl style="margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 8px 16px; font-size: 14px; border-top: 1px solid #E1E5EA; padding-top: 16px">
+<dt style="font-variant-numeric: tabular-nums; color: #5D6A77">Tracks</dt><dd style="margin: 0">Steps, active minutes [CONFIRM]</dd>
+<dt style="font-variant-numeric: tabular-nums; color: #5D6A77">Inputs</dt><dd style="margin: 0">Accelerometer</dd>
+</dl>
+</div>
+
+<div style="background: #FFFFFF; border: 1px solid #E1E5EA; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px"><div style="font-size: 20px; font-weight: 600">Battery &amp; power</div><div style="font-variant-numeric: tabular-nums; font-size: 12px; color: #5D6A77">HARDWARE</div></div>
+<div style="font-size: 44px; font-weight: 600; letter-spacing: -0.02em; color: #0F766E">[XX h]</div>
+<div style="font-size: 14px; color: #4E5B68; margin-top: -12px">battery life, typical use</div>
+<dl style="margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 8px 16px; font-size: 14px; border-top: 1px solid #E1E5EA; padding-top: 16px">
+<dt style="font-variant-numeric: tabular-nums; color: #5D6A77">Capacity</dt><dd style="margin: 0">[XXX mAh]</dd>
+<dt style="font-variant-numeric: tabular-nums; color: #5D6A77">Charge time</dt><dd style="margin: 0">[X h]</dd>
+</dl>
+</div>
+
+</div>
+</div>
+
+<!-- Model + dataset -->
+<div style="display: flex; flex-wrap: wrap; gap: 16px">
+<div style="flex: 1 1 340px; background: #FFFFFF; border: 1px solid #E1E5EA; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 20px">
+<h3 style="margin: 0; font-size: 20px; font-weight: 600">Training data</h3>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 20px">
+<div style="display: flex; flex-direction: column; gap: 4px"><div style="font-size: 32px; font-weight: 600">[N]</div><div style="font-size: 14px; color: #4E5B68">patients</div></div>
+<div style="display: flex; flex-direction: column; gap: 4px"><div style="font-size: 32px; font-weight: 600">[N]</div><div style="font-size: 14px; color: #4E5B68">nights recorded</div></div>
+<div style="display: flex; flex-direction: column; gap: 4px"><div style="font-size: 32px; font-weight: 600">[N]</div><div style="font-size: 14px; color: #4E5B68">hours of signal</div></div>
+</div>
+<div style="font-size: 14px; line-height: 1.6; color: #4E5B68; border-top: 1px solid #E1E5EA; padding-top: 16px">Source: [DATASET NAME / INSTITUTION]. Labels: [e.g. polysomnography-scored apnea events].</div>
+</div>
+
+<div style="flex: 1.4 1 420px; background: #FFFFFF; border: 1px solid #E1E5EA; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 16px">
+<h3 style="margin: 0; font-size: 20px; font-weight: 600">Model performance</h3>
+<div style="overflow-x: auto">
+<table style="width: 100%; border-collapse: collapse; font-size: 15px; min-width: 380px">
+<thead>
+<tr style="font-variant-numeric: tabular-nums; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: #5D6A77; text-align: left">
+<th style="padding: 10px 12px 10px 0; font-weight: 500; border-bottom: 1px solid #C9D0D8">Metric</th>
+<th style="padding: 10px 12px; font-weight: 500; border-bottom: 1px solid #C9D0D8">Value</th>
+<th style="padding: 10px 0 10px 12px; font-weight: 500; border-bottom: 1px solid #C9D0D8">What it means</th>
+</tr>
+</thead>
+<tbody>
+<tr><td style="padding: 14px 12px 14px 0; border-bottom: 1px solid #E1E5EA">Accuracy</td><td style="padding: 14px 12px; border-bottom: 1px solid #E1E5EA; font-variant-numeric: tabular-nums; color: #0F766E">[XX%]</td><td style="padding: 14px 0 14px 12px; border-bottom: 1px solid #E1E5EA; color: #4E5B68">Correct calls overall</td></tr>
+<tr><td style="padding: 14px 12px 14px 0; border-bottom: 1px solid #E1E5EA">Sensitivity</td><td style="padding: 14px 12px; border-bottom: 1px solid #E1E5EA; font-variant-numeric: tabular-nums; color: #0F766E">[XX%]</td><td style="padding: 14px 0 14px 12px; border-bottom: 1px solid #E1E5EA; color: #4E5B68">Apnea events caught</td></tr>
+<tr><td style="padding: 14px 12px 14px 0; border-bottom: 1px solid #E1E5EA">Specificity</td><td style="padding: 14px 12px; border-bottom: 1px solid #E1E5EA; font-variant-numeric: tabular-nums; color: #0F766E">[XX%]</td><td style="padding: 14px 0 14px 12px; border-bottom: 1px solid #E1E5EA; color: #4E5B68">Normal breathing left unflagged</td></tr>
+<tr><td style="padding: 14px 12px 14px 0">F1 score</td><td style="padding: 14px 12px; font-variant-numeric: tabular-nums; color: #0F766E">[0.XX]</td><td style="padding: 14px 0 14px 12px; color: #4E5B68">Balance of precision and recall</td></tr>
+</tbody>
+</table>
+</div>
+<div style="font-size: 13px; color: #5D6A77">Model type: [e.g. 1D CNN / LSTM] · Evaluated on [N] held-out patients</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer style="border-top: 1px solid #E1E5EA">
+<div style="max-width: 1200px; margin: 0 auto; padding: 32px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-variant-numeric: tabular-nums; font-size: 13px; color: #5D6A77">
+<span>[PRODUCT NAME] · [YOUR NAME / TEAM]</span>
+<span>Not a medical device. [ADJUST DISCLAIMER AS NEEDED]</span>
+</div>
+</footer>
+
+</div>
+</body>
+</html>
