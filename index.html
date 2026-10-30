@@ -124,6 +124,10 @@ a{color:#111820}a:hover{color:#000000}
 <div style="font-variant-numeric: tabular-nums; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #4E5B68">Prototype</div>
 <h3 style="margin: 0; font-size: 24px; font-weight: 600">A physical watch that talks to the room</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4E5B68; max-width: 640px">Serious prototyping began. The watch became a physical device and the infrared remote integration was completed, so it could turn off the devices around the user.</p>
+<figure style="margin: 14px 0 0; display: flex; flex-direction: column; gap: 8px; max-width: 427px">
+<img src="assets/prototype-v1.png" width="427" height="367" loading="lazy" alt="3D model of the first prototype: a light blue enclosure holding the microcontroller and circuit board, with the battery lifted off above it" style="width: 100%; height: auto; display: block; border-radius: 12px; border: 1px solid #E1E5EA">
+<figcaption style="font-size: 14px; line-height: 1.5; color: #5D6A77">First prototype model: enclosure, board and battery</figcaption>
+</figure>
 </div>
 </li>
 
@@ -154,6 +158,21 @@ a{color:#111820}a:hover{color:#000000}
 <div style="font-variant-numeric: tabular-nums; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #4E5B68">PulseApnea</div>
 <h3 style="margin: 0; font-size: 24px; font-weight: 600">First polished prototype</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4E5B68; max-width: 640px">The first polished PulseApnea prototype was built. We upgraded the sensors and microcontroller for the new purpose, contacted local hospitals for training data, and began developing and training our own machine learning models to push detection accuracy further.</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4E5B68; max-width: 640px">The new hardware centres on a Seeed XIAO nRF52840 connected over I²C to a pulse sensor. We drew the schematic and routed a custom two-layer board in KiCad.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 16px; margin-top: 14px">
+<figure style="flex: 1 1 320px; margin: 0; display: flex; flex-direction: column; gap: 8px">
+<img src="assets/pcb-schematic.png" width="1882" height="1288" loading="lazy" alt="KiCad schematic wiring the XIAO nRF52840 to the pulse sensor over SDA, SCL, power and ground" style="width: 100%; height: auto; display: block; border-radius: 12px; border: 1px solid #E1E5EA">
+<figcaption style="font-size: 14px; line-height: 1.5; color: #5D6A77">Schematic: microcontroller and sensor wiring</figcaption>
+</figure>
+<figure style="flex: 1 1 320px; margin: 0; display: flex; flex-direction: column; gap: 8px">
+<img src="assets/pcb-layout.png" width="1261" height="913" loading="lazy" alt="Routed two-layer PCB layout showing the XIAO footprint and the sensor pads" style="width: 100%; height: auto; display: block; border-radius: 12px; border: 1px solid #E1E5EA">
+<figcaption style="font-size: 14px; line-height: 1.5; color: #5D6A77">Routed board layout, front and back copper</figcaption>
+</figure>
+<figure style="flex: 1 1 100%; margin: 0; display: flex; flex-direction: column; gap: 8px">
+<img src="assets/pcb-editor.png" width="2547" height="1524" loading="lazy" alt="KiCad PCB editor with the wristflex board fully routed and no unrouted nets" style="width: 100%; height: auto; display: block; border-radius: 12px; border: 1px solid #E1E5EA">
+<figcaption style="font-size: 14px; line-height: 1.5; color: #5D6A77">KiCad PCB editor</figcaption>
+</figure>
+</div>
 </div>
 </li>
 
@@ -236,28 +255,28 @@ a{color:#111820}a:hover{color:#000000}
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px">
 
 <div style="background: #FFFFFF; border: 1px solid #E1E5EA; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 18px">
-<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px"><div style="font-size: 20px; font-weight: 600">Sleep-onset detection</div><div style="font-variant-numeric: tabular-nums; font-size: 12px; color: #5D6A77">ORIGINAL</div></div>
-<div style="font-size: 44px; font-weight: 600; letter-spacing: -0.02em; color: #0F766E">[XX%]</div>
-<div style="font-size: 14px; color: #4E5B68; margin-top: -12px">detection accuracy</div>
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px"><div style="font-size: 20px; font-weight: 600">Companion app</div><div style="font-variant-numeric: tabular-nums; font-size: 12px; color: #5D6A77">IN DEVELOPMENT</div></div>
+<div style="font-size: 44px; font-weight: 600; letter-spacing: -0.02em; color: #0F766E">Oct 2026</div>
+<div style="font-size: 14px; color: #4E5B68; margin-top: -12px">development started</div>
 <dl style="margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 8px 16px; font-size: 14px; border-top: 1px solid #E1E5EA; padding-top: 16px">
-<dt style="font-variant-numeric: tabular-nums; color: #5D6A77">Inputs</dt><dd style="margin: 0">Motion, heart rate</dd>
-<dt style="font-variant-numeric: tabular-nums; color: #5D6A77">Latency</dt><dd style="margin: 0">[X min] after onset</dd>
+<dt style="font-variant-numeric: tabular-nums; color: #5D6A77">Pairs with</dt><dd style="margin: 0">PulseApnea wristband</dd>
+<dt style="font-variant-numeric: tabular-nums; color: #5D6A77">Status</dt><dd style="margin: 0">In development</dd>
 </dl>
 </div>
 
 <div style="background: #FFFFFF; border: 1px solid #E1E5EA; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 18px">
 <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px"><div style="font-size: 20px; font-weight: 600">IR device control</div><div style="font-variant-numeric: tabular-nums; font-size: 12px; color: #5D6A77">ORIGINAL</div></div>
-<div style="font-size: 44px; font-weight: 600; letter-spacing: -0.02em; color: #0F766E">[X m]</div>
+<div style="font-size: 44px; font-weight: 600; letter-spacing: -0.02em; color: #0F766E">5 m</div>
 <div style="font-size: 14px; color: #4E5B68; margin-top: -12px">effective IR range</div>
 <dl style="margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 8px 16px; font-size: 14px; border-top: 1px solid #E1E5EA; padding-top: 16px">
-<dt style="font-variant-numeric: tabular-nums; color: #5D6A77">Devices</dt><dd style="margin: 0">Nearby electronics</dd>
-<dt style="font-variant-numeric: tabular-nums; color: #5D6A77">Codes stored</dt><dd style="margin: 0">[N]</dd>
+<dt style="font-variant-numeric: tabular-nums; color: #5D6A77">Devices</dt><dd style="margin: 0">Fans, TVs, speakers</dd>
+<dt style="font-variant-numeric: tabular-nums; color: #5D6A77">Codes stored</dt><dd style="margin: 0">Most common fan, TV and speaker codes</dd>
 </dl>
 </div>
 
 <div style="background: #FFFFFF; border: 1px solid #0F766E; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 18px">
 <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px"><div style="font-size: 20px; font-weight: 600">Apnea screening</div><div style="font-variant-numeric: tabular-nums; font-size: 12px; color: #0F766E">AI</div></div>
-<div style="font-size: 44px; font-weight: 600; letter-spacing: -0.02em; color: #0F766E">75%</div>
+<div style="font-size: 44px; font-weight: 600; letter-spacing: -0.02em; color: #0F766E">80%</div>
 <div style="font-size: 14px; color: #4E5B68; margin-top: -12px">sensitivity for severe apnea</div>
 <dl style="margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 8px 16px; font-size: 14px; border-top: 1px solid #E1E5EA; padding-top: 16px">
 <dt style="font-variant-numeric: tabular-nums; color: #5D6A77">Inputs</dt><dd style="margin: 0">SpO₂, heart rate, motion, microphone</dd>
@@ -271,7 +290,7 @@ a{color:#111820}a:hover{color:#000000}
 <div style="font-size: 14px; color: #4E5B68; margin-top: -12px">sensor data rate (session log)</div>
 <dl style="margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 8px 16px; font-size: 14px; border-top: 1px solid #E1E5EA; padding-top: 16px">
 <dt style="font-variant-numeric: tabular-nums; color: #5D6A77">Sensor</dt><dd style="margin: 0">MAX30102 (PPG)</dd>
-<dt style="font-variant-numeric: tabular-nums; color: #5D6A77">Error vs ref.</dt><dd style="margin: 0">[± X bpm]</dd>
+<dt style="font-variant-numeric: tabular-nums; color: #5D6A77">Error vs ref.</dt><dd style="margin: 0">± 5 bpm vs Apple Watch</dd>
 </dl>
 </div>
 
@@ -290,8 +309,8 @@ a{color:#111820}a:hover{color:#000000}
 <div style="font-size: 44px; font-weight: 600; letter-spacing: -0.02em; color: #0F766E">8h</div>
 <div style="font-size: 14px; color: #4E5B68; margin-top: -12px">battery life, typical use</div>
 <dl style="margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 8px 16px; font-size: 14px; border-top: 1px solid #E1E5EA; padding-top: 16px">
-<dt style="font-variant-numeric: tabular-nums; color: #5D6A77">Capacity</dt><dd style="margin: 0">120mAH</dd>
-<dt style="font-variant-numeric: tabular-nums; color: #5D6A77">Charge time</dt><dd style="margin: 0">[1 h]</dd>
+<dt style="font-variant-numeric: tabular-nums; color: #5D6A77">Capacity</dt><dd style="margin: 0">200 mAh</dd>
+<dt style="font-variant-numeric: tabular-nums; color: #5D6A77">Charge time</dt><dd style="margin: 0">1 h</dd>
 </dl>
 </div>
 
@@ -342,7 +361,7 @@ a{color:#111820}a:hover{color:#000000}
 <div style="display: flex; flex-direction: column; gap: 16px; max-width: 720px">
 <div style="font-variant-numeric: tabular-nums; font-size: 20px; letter-spacing: 0.12em; text-transform: uppercase; color: #0F766E">03 · Data explorer</div>
 <h2 style="margin: 0; font-size: clamp(32px, 4.5vw, 52px); line-height: 1.08; font-weight: 600; letter-spacing: -0.02em">What sleep apnea looks like in real overnight data</h2>
-<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #4E5B68">Interactive charts built from open, clinically scored polysomnography recordings on PhysioNet. They illustrate the signals our model works with; they are not the Kaggle training set itself.</p>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #4E5B68">Interactive charts built from open, clinically scored polysomnography recordings on PhysioNet. They illustrate the signals our model works with.</p>
 </div>
 
 <!-- Overview -->
@@ -370,27 +389,6 @@ a{color:#111820}a:hover{color:#000000}
 <div style="font-size: 12px; color: #5D6A77">Scroll or pinch to zoom, drag to pan. Shaded bands are minutes scored as apnea by clinicians.</div>
 <div style="position: relative; height: 240px"><canvas id="spo2Chart" role="img" aria-label="Lowest blood oxygen per minute across the night with apnea minutes shaded"></canvas></div>
 <div style="position: relative; height: 200px"><canvas id="hrChart" role="img" aria-label="Heart rate per minute across the night"></canvas></div>
-</div>
-
-<!-- Side by side -->
-<div style="background: #FFFFFF; border: 1px solid #E1E5EA; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 16px">
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px">
-<h3 style="margin: 0; font-size: 20px; font-weight: 600">Your recording next to an apnea patient, second by second</h3>
-<div style="display: flex; flex-wrap: wrap; gap: 12px">
-<label style="font-size: 14px; color: #4E5B68; display: flex; align-items: center; gap: 8px">My recording
-<select id="zoomSess" style="font: inherit; padding: 8px 12px; border-radius: 8px; border: 1px solid #C9D0D8; background: #FFFFFF; color: #111820; max-width: 100%"></select></label>
-<label style="font-size: 14px; color: #4E5B68; display: flex; align-items: center; gap: 8px">Patient
-<select id="zoomRec" style="font: inherit; padding: 8px 12px; border-radius: 8px; border: 1px solid #C9D0D8; background: #FFFFFF; color: #111820"></select></label>
-</div>
-</div>
-<p id="zoomSummary" style="margin: 0; font-size: 14px; line-height: 1.5; color: #4E5B68">Loading second-by-second data…</p>
-<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px; font-size: 14px; color: #4E5B68">
-<label style="display: flex; align-items: center; gap: 8px; flex: 1 1 260px">Start at <input id="zoomStart" type="range" min="0" max="100" step="15" value="0" style="flex: 1; accent-color: #0F766E"> <span id="zoomStartLabel" style="font-variant-numeric: tabular-nums; min-width: 72px"></span></label>
-<button id="zoomDip" type="button" style="font: inherit; font-size: 14px; padding: 8px 14px; border-radius: 999px; border: 1px solid #C9D0D8; background: #FFFFFF; color: #111820; cursor: pointer">Jump to deepest oxygen dip</button>
-</div>
-<div style="position: relative; height: 240px"><canvas id="zoomSpo2" role="img" aria-label="Blood oxygen second by second, your recording against an apnea patient"></canvas></div>
-<div style="position: relative; height: 200px"><canvas id="zoomHr" role="img" aria-label="Heart rate second by second, your recording against an apnea patient"></canvas></div>
-<div style="font-size: 12px; line-height: 1.5; color: #5D6A77">Different people and different sensors: the patient trace comes from a clinical sleep study, yours from the wrist. Both start at second 0 of the same-length window so the shapes can be compared. Gaps mean no valid reading.</div>
 </div>
 
 <!-- PulseApnea session -->
@@ -424,8 +422,7 @@ Sources, both under the Open Data Commons Attribution License: <a href="https://
 <!-- FOOTER -->
 <footer style="border-top: 1px solid #E1E5EA">
 <div style="max-width: 1200px; margin: 0 auto; padding: 32px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-variant-numeric: tabular-nums; font-size: 13px; color: #5D6A77">
-<span>PulseApnea · [YOUR NAME / TEAM]</span>
-<span>Not a medical device. Screening support only, not a diagnosis.</span>
+<span>PulseApnea · Terry Gu</span>
 </div>
 </footer>
 
@@ -531,17 +528,14 @@ Sources, both under the Open Data Commons Attribution License: <a href="https://
   sessionP.then(function (list) {
     if (!list || !list.length) { $('sessSummary').textContent = 'Session data is unavailable.'; return; }
     list.forEach(function (x) {
-      ['sessSelect', 'zoomSess'].forEach(function (id) {
-        var o = document.createElement('option'); o.value = x.id; o.textContent = x.label + ' · ' + dur(x.seconds); $(id).appendChild(o);
-      });
+      var o = document.createElement('option'); o.value = x.id; o.textContent = x.label + ' · ' + dur(x.seconds); $('sessSelect').appendChild(o);
     });
     function apply(id) {
       var s = list.filter(function (x) { return x.id === id; })[0];
-      curSession = s; $('sessSelect').value = id; $('zoomSess').value = id;
+      curSession = s; $('sessSelect').value = id;
       drawSession(s); sessSubs.forEach(function (fn) { fn(s); });
     }
     $('sessSelect').onchange = function () { apply(this.value); };
-    $('zoomSess').onchange = function () { apply(this.value); };
     function drawSession(s) {
       var m = s.summary, nseg = s.breaks.length + 1;
       $('sessSummary').textContent = s.label + ' · ' + dur(s.seconds) + ' of wrist data' + (nseg > 1 ? ' (' + nseg + ' segments, joined at the dashed line)' : '') +
@@ -570,8 +564,7 @@ Sources, both under the Open Data Commons Attribution License: <a href="https://
   });
 
   // ---------- Physiology ----------
-  Promise.all([load('apnea_ecg.json'), sessionP]).then(function (res) {
-    var recs = res[0];
+  load('apnea_ecg.json').then(function (recs) {
     var ids = Object.keys(recs), spo2Chart = null, hrChart = null;
     ids.forEach(function (id) { var o = document.createElement('option'); o.value = id; o.textContent = id.toUpperCase(); $('recSelect').appendChild(o); });
     function sync(src, dst) {
@@ -619,55 +612,6 @@ Sources, both under the Open Data Commons Attribution License: <a href="https://
     }
     $('recSelect').onchange = function () { draw(this.value); };
     draw(ids[0]);
-
-    // ---------- Second-by-second comparison ----------
-    load('apnea_ecg_1hz.json').then(function (hz) {
-      if (!curSession) { $('zoomSummary').textContent = 'Your session data is unavailable.'; return; }
-      var W = 0, zSpo2 = null, zHr = null;
-      Object.keys(hz).forEach(function (id) { var o = document.createElement('option'); o.value = id; o.textContent = id.toUpperCase(); $('zoomRec').appendChild(o); });
-      var brk = { id: 'brk2', afterDatasetsDraw: function (c) {
-        var x = c.scales.x, a = c.chartArea, g = c.ctx; g.save(); g.setLineDash([4, 4]); g.strokeStyle = GREY;
-        curSession.breaks.forEach(function (b) { var px = x.getPixelForValue(b); g.beginPath(); g.moveTo(px, a.top); g.lineTo(px, a.bottom); g.stroke(); }); g.restore(); } };
-      function fmt(sec) { var h = Math.floor(sec / 3600), m = Math.floor(sec % 3600 / 60); return h + 'h ' + (m < 10 ? '0' : '') + m + 'm'; }
-      function deepest(id) {
-        W = curSession.seconds;
-        var v = hz[id].spo2, best = -1, bv = 101;
-        for (var i = 0; i < v.length; i++) { if (v[i] !== null && v[i] < bv) { bv = v[i]; best = i; } }
-        return Math.max(0, Math.min(best - Math.round(W / 2), v.length - W));
-      }
-      function build(id, start) {
-        var d = hz[id], r = recs[id], mine = function (k) { return curSession.rows.map(function (q) { return { x: q.t, y: q[k] }; }); };
-        var pat = function (k) { var out = []; for (var t = 0; t <= W; t++) { out.push({ x: t, y: d[k][start + t] === undefined ? null : d[k][start + t] }); } return out; };
-        var m0 = Math.floor(start / 60), m1 = Math.min(r.minutes - 1, Math.floor((start + W) / 60)), ap = 0;
-        for (var m = m0; m <= m1; m++) { ap += r.apnea[m]; }
-        var lows = pat('spo2').filter(function (q) { return q.y !== null; }).map(function (q) { return q.y; });
-        $('zoomStartLabel').textContent = fmt(start);
-        $('zoomSummary').textContent = id.toUpperCase() + ' from ' + fmt(start) + ' in: ' + ap + ' of ' + (m1 - m0 + 1) +
-          ' overlapping minutes were scored as apnea, and the patient’s blood oxygen reached ' + (lows.length ? Math.min.apply(null, lows) : '–') +
-          '%. Your recording (' + curSession.label + ', ' + dur(curSession.seconds) + ') stayed between ' + curSession.summary.spo2_min + '% and ' + curSession.summary.spo2_max + '%.';
-        if (zSpo2) { zSpo2.destroy(); zHr.destroy(); }
-        var opts = function (ytitle, extra, xtitle) {
-          return { maintainAspectRatio: false, parsing: false, animation: false, layout: { padding: { right: 24 } },
-            interaction: { mode: 'nearest', axis: 'x', intersect: false },
-            plugins: { legend: { position: 'bottom', labels: { usePointStyle: true, boxWidth: 8 } } },
-            scales: { x: { type: 'linear', min: 0, max: W, title: { display: !!xtitle, text: xtitle }, ticks: { stepSize: W > 120 ? 60 : 10 } },
-              y: Object.assign({ afterFit: function (s) { s.width = 64; }, title: { display: true, text: ytitle } }, extra) } };
-        };
-        var line = function (label, data, color) { return { type: 'line', label: label, data: data, borderColor: color, borderWidth: 2, pointRadius: 0, pointHoverRadius: 4 }; };
-        zSpo2 = new Chart($('zoomSpo2'), { plugins: [brk], data: { datasets: [ line('Patient ' + id.toUpperCase(), pat('spo2'), TEAL), line('Your recording', mine('spo2'), ORANGE) ] }, options: opts('SpO₂ (%)', { min: 50, max: 100 }, '') });
-        zHr = new Chart($('zoomHr'), { plugins: [brk], data: { datasets: [ line('Patient ' + id.toUpperCase(), pat('hr'), GREY), line('Your recording', mine('bpm'), ORANGE) ] }, options: opts('Heart rate (bpm)', {}, 'Seconds into window') });
-      }
-      function go(id, start) {
-        W = curSession.seconds;
-        var max = Math.max(0, hz[id].seconds - W);
-        $('zoomStart').max = max; $('zoomStart').value = start; build(id, start);
-      }
-      $('zoomRec').onchange = function () { go(this.value, deepest(this.value)); };
-      $('zoomStart').oninput = function () { build($('zoomRec').value, +this.value); };
-      $('zoomDip').onclick = function () { go($('zoomRec').value, deepest($('zoomRec').value)); };
-      sessSubs.push(function () { go($('zoomRec').value, deepest($('zoomRec').value)); });
-      go('a01', deepest('a01'));
-    });
   });
 })();
 </script>
