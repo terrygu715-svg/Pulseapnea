@@ -10,10 +10,25 @@
 body{margin:0;background:#F6F7F9}
 a{color:#111820}a:hover{color:#000000}
 </style>
-<style>html{scroll-behavior:smooth}</style>
+<style>html{scroll-behavior:smooth}
+#sidenav{position:fixed;left:16px;top:40%;transform:translateY(-50%);z-index:10;display:none;flex-direction:column;gap:4px;padding:8px;background:#FFFFFF;border:1px solid #E1E5EA;border-radius:16px;font-variant-numeric:tabular-nums;font-size:14px}
+#sidenav a{display:flex;align-items:center;gap:10px;min-height:44px;padding:0 12px;border-radius:10px;text-decoration:none;color:#4E5B68}
+#sidenav a:hover{background:#EDF0F3;color:#111820}
+#sidenav a[aria-current=true]{background:#E6F2F1;color:#0F766E;font-weight:600}
+#sidenav .lbl{display:none;white-space:nowrap}
+@media (min-width:1250px){#sidenav{display:flex}}
+@media (min-width:1560px){#sidenav .lbl{display:inline}}
+</style>
 </head>
 <body>
 <div style="background: #F6F7F9; color: #111820; font-family: 'Sora', system-ui, sans-serif; min-height: 100vh">
+
+<!-- SIDE NAV -->
+<nav id="sidenav" aria-label="Sections">
+<a href="#timeline" title="Timeline">01<span class="lbl">Timeline</span></a>
+<a href="#functions" title="Functions &amp; data">02<span class="lbl">Functions &amp; data</span></a>
+<a href="#explorer" title="Data explorer">03<span class="lbl">Data explorer</span></a>
+</nav>
 
 <!-- NAV -->
 <header style="border-bottom: 1px solid #E1E5EA">
@@ -21,11 +36,6 @@ a{color:#111820}a:hover{color:#000000}
 <div style="display: flex; align-items: center; gap: 12px">
 <div style="width: 28px; height: 28px; border-radius: 9px; border: 2px solid #0F766E; box-sizing: border-box"></div>
 <span style="font-weight: 600; font-size: 18px; letter-spacing: -0.01em">PulseApnea<br></span>
-</div>
-<div style="display: flex; flex-wrap: wrap; gap: 8px; font-variant-numeric: tabular-nums; font-size: 14px">
-<a href="#timeline" style="text-decoration: none; padding: 12px 14px; border-radius: 8px">01 Timeline</a>
-<a href="#functions" style="text-decoration: none; padding: 12px 14px; border-radius: 8px">02 Functions &amp; data</a>
-<a href="#explorer" style="text-decoration: none; padding: 12px 14px; border-radius: 8px">03 Data explorer</a>
 </div>
 </nav>
 </header>
@@ -613,6 +623,20 @@ Sources, both under the Open Data Commons Attribution License: <a href="https://
     $('recSelect').onchange = function () { draw(this.value); };
     draw(ids[0]);
   });
+})();
+</script>
+<script>
+(function () {
+  var links = document.querySelectorAll('#sidenav a');
+  function update() {
+    var cur = null, y = window.innerHeight * 0.4;
+    links.forEach(function (a) {
+      var el = document.querySelector(a.getAttribute('href'));
+      if (el && el.getBoundingClientRect().top <= y) { cur = a; }
+    });
+    links.forEach(function (a) { if (a === cur) { a.setAttribute('aria-current', 'true'); } else { a.removeAttribute('aria-current'); } });
+  }
+  window.addEventListener('scroll', update, { passive: true }); update();
 })();
 </script>
 </body>
